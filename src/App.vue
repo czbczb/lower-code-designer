@@ -6,7 +6,7 @@ import { RouterLink, RouterView } from "vue-router";
   <header class="wrapper">
     <nav>
       <RouterLink to="/">Designer</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
+      <RouterLink to="/describe">Describe</RouterLink>
     </nav>
   </header>
   <RouterView />
@@ -46,7 +46,6 @@ nav a:first-of-type {
   header {
     display: flex;
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
   }
 
   header.wrapper {
@@ -57,11 +56,8 @@ nav a:first-of-type {
 
   nav {
     text-align: left;
-    margin-left: -1rem;
     font-size: 1rem;
-
     padding: 1rem 0;
-    margin-top: 1rem;
   }
 }
 </style>
